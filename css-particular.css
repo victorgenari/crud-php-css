@@ -1,0 +1,274 @@
+/* Propriedades inclusas em todas páginas */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* Página insert */
+
+body {
+    background: linear-gradient(45deg, #0a2c53, #3bcaee);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-insert {
+    background: white;
+    width: 120vw;
+    max-width: 380px;
+    min-height: 60vh;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 15px;
+    padding: 50px 25px;
+}
+
+.registration-insert {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.linha-registration {
+    height: 5px;
+    width: 38px;
+    background-color: black;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #0a2c53, #3bcaee);
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-insert {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.just-inputs {
+    width: 100%;
+    max-width: 350px;
+    padding: 8px 5px;
+    outline: none;
+    border-radius: 5px;
+    border-bottom: 2px solid black;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.just-inputs:hover {
+    box-shadow: 3px 3px 3px black;
+    transition: 0.2s;
+}
+
+.btn-cadastrar {
+    padding: 5px 12px;
+    background: linear-gradient(45deg, #0a2c53, #3bcaee);
+    color: white;
+    border-radius: 10px;
+    margin-top: 28px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.btn-cadastrar:hover {
+    letter-spacing: 1.2px;
+    transition: 0.3s;
+    cursor: pointer;
+    background: linear-gradient(45deg, #33adcc, #0d3563);
+}
+
+.btn-cancelar {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #742517, #c2200b);
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 12px;
+}
+
+.btn-cancelar:hover {
+    letter-spacing: 1.2px;
+    transition: 0.3s;
+    cursor: pointer;
+    background: linear-gradient(45deg, #d83823, #521d14);
+}
+
+
+/* Página Index */
+
+@media screen and (max-width: 700px) {
+
+    .principal-index {width: 94%;}
+
+    .table-index {width: 100%; text-align: center;}
+
+    .table-index th , .table-index td {padding: 7px 0;}
+
+    .table-index thead {display: none;}
+    .table-index tbody td {display: flex; flex-direction: column; align-items: center;}
+
+    .btn-edit {margin-bottom: 3px;}
+    .btn-delete {margin-top: 3px; margin-bottom: 3px;}
+    .btn-new {margin-top: 3px;}
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .principal-index {width: 75%;}
+    .principal-index table, th, tr, td {border-collapse: collapse; border: 2px solid black;}
+
+    .table-index {width: 100%; text-align: center;}
+    .table-index thead, tbody {background-color: rgb(218, 210, 210); font-weight: bold;}
+    .table-index th , .table-index td {padding: 7px 0;}
+
+    .table-index tbody tr td:nth-child(1) {width: 20%;}
+    .table-index tbody tr td:nth-child(2) {width: 15%;}
+    .table-index tbody tr td:nth-child(3) {width: 10%;}
+    .table-index tbody tr td:nth-child(4) {width: 8%;}
+    .table-index tbody tr td:nth-child(5) {width: 15%;}
+
+}
+
+.principal-index {
+    display: flex;
+    margin: auto;
+}
+
+.line-efect-index:hover {background-color: rgb(158, 151, 151); transition: 1s;}
+
+.btn-edit {
+    padding: 5px 12px;
+    background: linear-gradient(45deg, #0a2c53, #3bcaee);
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-edit:hover {
+    transition: 1s;
+    cursor: pointer;
+    background: linear-gradient(45deg, #33adcc, #0d3563);
+}
+
+.btn-delete {
+    color: white;
+    background: linear-gradient(45deg, #742517, #c2200b);
+    border-radius: 10px; padding: 5px 12px;
+}
+
+.btn-delete:hover {
+    transition: 1s;
+    cursor: pointer;
+    background: linear-gradient(45deg, #d83823, #521d14);
+}
+
+.btn-new {
+    padding: 5px 12px;
+    background: linear-gradient(45deg, #0b6b6b, #3bcaee);
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-new:hover {
+    transition: 1s;
+    cursor: pointer;
+    background: linear-gradient(45deg, #33adcc, #1b63b6);
+}
+
+
+/* Página Editar */
+
+.container-edit {
+    background: white;
+    width: 120vw;
+    max-width: 380px;
+    min-height: 60vh;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 15px;
+    padding: 50px 25px;
+}
+
+.alterations-edit {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row-alterations {
+    height: 5px;
+    width: 85px;
+    background-color: black;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #0a2c53, #3bcaee);
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-edit {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.just-inputs {
+    width: 100%;
+    max-width: 350px;
+    padding: 8px 5px;
+    outline: none;
+    border-radius: 5px;
+    border-bottom: 2px solid black;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.just-inputs:hover {
+    box-shadow: 3px 3px 3px black;
+    transition: 0.2s;
+}
+
+.save-btn {
+    padding: 5px 12px;
+    background: linear-gradient(45deg, #0a2c53, #3bcaee);
+    color: white;
+    border-radius: 10px;
+    margin-top: 28px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.save-btn:hover {
+    letter-spacing: 1.2px;
+    transition: 0.3s;
+    cursor: pointer;
+    background: linear-gradient(45deg, #33adcc, #0d3563);
+}
+
+.cancel-btn {
+    color: white;
+    background: linear-gradient(45deg, #742517, #c2200b);
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 12px;
+    font-size: 16px;
+}
+
+.cancel-btn:hover {
+    letter-spacing: 1.2px;
+    transition: 0.3s;
+    cursor: pointer;
+    background: linear-gradient(45deg, #d83823, #521d14);
+}
